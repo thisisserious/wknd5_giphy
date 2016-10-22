@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/thisisserious/wknd5_giphy#readme",
   "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
     "express": "^4.14.0"
   }
 }

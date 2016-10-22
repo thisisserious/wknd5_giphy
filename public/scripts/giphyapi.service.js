@@ -1,5 +1,15 @@
 angular.module('giphyApp')
-       .service('giphyapi', GiphyAPIService);
+       .service('giphyapi', GiphyAPIService)
+       .config(function($routeProvider, $locationProvider) {
+         $routeProvider.when('/home', {
+           templateUrl: 'views/home.html',
+           controller: 'HomeController as home'
+         }).when('/favorites', {
+           templateUrl: 'views/favorites.html'
+         });
+
+         $locationProvider.html5Mode(true);
+       });
 
 function GiphyAPIService($http) {
   var API = 'http://api.giphy.com/v1/gifs/';
