@@ -1,6 +1,8 @@
-a {
+nav, a {
+  display: inline;
+  margin-right: 140px;
   margin-bottom: 30px;
-  border: 2px solid black;
+  /*text-decoration: none;*/
 }
 
 button {
@@ -9,13 +11,15 @@ button {
   border-radius: 15px;
   border: none;
   outline: none;
+  /*clear: both;*/
 }
 
 img {
   border-radius: 15px;
-  margin: 20px auto;
+  margin: 20px auto 20px 20px;
   height: 50%;
   width: auto;
+  /*float: left;*/
 }
 
 button:hover {
@@ -23,6 +27,24 @@ button:hover {
   cursor: pointer;
 }
 
+div {
+  border: 2px solid black;
+}
+
+/*#faves {
+  margin-left: 200px;
+}*/
+
+#faveButton:hover {
+  color: red;
+}
+
 #random {
   margin-top: 20px;
+}
+
+.classyDiv {
+  height: 400px;
+  width: 400px;
+  margin-top: 30px;
 }
