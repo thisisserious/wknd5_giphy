@@ -31,9 +31,9 @@ div {
   border: 2px solid black;
 }
 
-/*#faves {
+#faves {
   margin-left: 200px;
-}*/
+}
 
 #faveButton:hover {
   color: red;
