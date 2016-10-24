@@ -14,11 +14,15 @@
     <script src="scripts/fave.service.js"></script>
     <script src="scripts/fave.controller.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Poppins" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" />
     <base href="/" />
 </head>
 
 <body ng-app="giphyApp" ng-controller="MainController as main">
+  <header>
+    Giphys Galore
+  </header>
     <nav>
       <a href="/home">Home</a>
     </nav>
@@ -41,7 +45,7 @@
         <div class="classyDiv" ng-repeat="gif in main.searchGifs">
             <img ng-src="{{gif.images.downsized.url}}" />
             <textarea name="comments">Enter your comments...</textarea>
-            <button id="faveButton"><span id="heart">&#9825;</span> Favorite</button>
+            <button ng-click="" id="faveButton"><span id="heart">&#9825;</span> Favorite</button>
         </div>
     </main>
 </body>
